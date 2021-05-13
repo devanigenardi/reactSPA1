@@ -1,39 +1,27 @@
 import React from 'react';
 import './App.css';
+import data from './sample/data.json';
+console.log(data)
 
-class Cards extends React.Component {
+class App extends React.Component {
 
   state = {
-    'show': true
+    data: data
   }
 
-  toggleState = () => this.setState({show: !this.state.show})
-
-  render(){
-    if(this.state.show === true){
-      return (
-        <div id="hello">
-          <h2>{this.props.userHeadline}</h2>
-          <p>{this.props.userInfo}</p>
-          <button onClick={this.toggleState}>Hide content</button>
-        </div>
-      )
-    } else {
-      return (
-        <h1>No hay elementos <button onClick={this.toggleState}>Show content</button></h1>
-      )
-    }
+  render () {
+    return (
+      <div>
+        { this.state.data.map((e) => 
+          <div key={e.name}>
+            <h1>{e.name}</h1>
+            <p>{e.age}</p>
+            <a href={e.url}>{e.phone}</a> 
+          </div>)
+        } 
+      </div>
+    )
   }
-}
-
-function App() {
-  return (
-    <div id="card">
-      <Cards userHeadline="User 1" userInfo="lorem 1"/>
-      <Cards userHeadline="User 2" userInfo="lorem 2"/>
-      <Cards userHeadline="User 3" userInfo="loerm 3"/>
-    </div>
-  );
 }
 
 export default App;
