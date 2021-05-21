@@ -1,13 +1,11 @@
 import React, { Component }from 'react';
 
-class Tasks extends React.Component {
+import Task from './Task';
+
+class Tasks extends Component {
   
     render () {
-      return this.props.tasks.map(e => 
-            <div>
-                <p key={e.name}> {e.name} - {e.age}  - {e.phone}</p> 
-            </div> )
-    
+            return this.props.tasks.map(task => <Task task={task} key={task.name}/>)
         }
     }
   
