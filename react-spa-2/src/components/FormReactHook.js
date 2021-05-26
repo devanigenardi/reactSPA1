@@ -1,13 +1,19 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 const FormHooks = () => {
 
     const {register,handleSubmit, formState: { errors }} = useForm();
+
+    const [Entries, setEntries] = useState([]);
+    
     
     const onSubmit = (data, e) => {
         console.log(data);
         e.target.reset();
+        setEntries([
+            ...Entries, data
+        ])
     }
 
     return (
@@ -28,7 +34,7 @@ const FormHooks = () => {
                                     message: 'Title required' 
                                 },
                                 maxLength: {
-                                    value: 5,
+                                    value: 10,
                                     message: 'Five characters maximun'
                                 },
                                 minLength: {
@@ -53,7 +59,7 @@ const FormHooks = () => {
                                     message: 'Title required' 
                                 },
                                 maxLength: {
-                                    value: 5,
+                                    value: 10,
                                     message: 'Five characters maximun'
                                 },
                                 minLength: {
@@ -68,6 +74,13 @@ const FormHooks = () => {
                     </div>
                     <div className="col-md-8">
                         <button className="btn btn-primary" type="submit">Send</button>
+                    </div>
+                    <div>
+                        <ul className="list-group mt-3">
+                            {
+                                Entries.map((e, pos) => <li  key={pos} className="list-group">{e.userName} - {e.lastName} | user num: {pos + 1}</li>)
+                            }
+                        </ul>
                     </div>
                 </form>
                 <hr />
