@@ -1,0 +1,12 @@
+header {
+  padding: 20px 0;
+  background-color: #000;
+}
+
+header img {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+/*# sourceMappingURL=styles.css.map */
