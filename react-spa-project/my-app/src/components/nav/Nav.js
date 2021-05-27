@@ -11,8 +11,8 @@ const Nav = () => {
         <Router>
         <div className="container">
 
-            <div className="row">
-                <ul className="nav">
+            <div className="row my-3">
+                <ul className="nav nav-pills">
                 <li className="nav-item">
                     <NavLink className="nav-link" exact activeClassName="active" to="/">
                         Home

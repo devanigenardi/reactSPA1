@@ -1,5 +1,9 @@
-.active {
-  color: red;
-  border-bottom: 1px solid red;
+.nav-pills .nav-link {
+  color: #000;
+}
+
+.nav-pills .nav-link.active {
+  background: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=Nav.css.map */
