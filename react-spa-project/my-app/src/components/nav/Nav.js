@@ -3,7 +3,7 @@ import Home from '../home/Home'
 import Movies from '../movies/Movies'
 import TvShows from '../tvshows/TvShows'
 import './Nav.css'
-import { BrowserRouter as Router, Switch, Route, Link, NavLink } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
 
 
 const Nav = () => {

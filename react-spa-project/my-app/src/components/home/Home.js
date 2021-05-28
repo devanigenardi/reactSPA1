@@ -1,12 +1,16 @@
 import React from 'react'
+import Slider from '../carousel/Slider'
+import PageTitle from '../pagetitle/PageTitle'
 
 
 const Home = () => {
     return (
         <div className="container">
             <div className="row">
-                <h1>Home</h1>
+                <PageTitle title="Home" />
+                <Slider />
             </div>
+            
         </div>
         
     )

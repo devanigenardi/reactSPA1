@@ -5,10 +5,12 @@ import '../header/styles.css'
 
 const Header = () => {
     return (
-        <div className="row">
-            <header className="col-sm">
-                <img className={"mx-auto"} src={Logo} alt="logo" />
-            </header>
+        <div className="container-fluid">
+            <div className="row">
+                <header className="col-sm">
+                    <img className={"mx-auto"} src={Logo} alt="logo" />
+                </header>
+            </div>
         </div>
     )
 }

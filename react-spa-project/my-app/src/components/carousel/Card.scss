@@ -1,0 +1,82 @@
+
+.rec-carousel {
+    position: relative;
+    .rec-arrow {
+        position: absolute;
+        z-index: 1;
+        &.rec-arrow-left {
+            left: 30px;
+        }
+        &.rec-arrow-right {
+            right: 10px;
+        }
+    }
+    .ehkxHv:disabled {
+        display: none;
+    }
+    .cGKbZh {
+        background-color: #fff;
+    } 
+    .cGKbZh:hover:enabled, .cGKbZh:focus:enabled {
+        color: #fff;
+        background-color: #000;
+        box-shadow: none;
+    }
+    .rec-slider-container {
+        margin: 0;
+        padding: 0;
+        .rec-swipable {
+            .card {
+                width: 100%;
+                height: 440px;
+                background-color: gray;
+                background-size: cover;
+                background-position: center center;
+                margin: 0 2px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                align-items: center;
+                border: none;
+                border-radius: 0;
+                color: #fff;
+                padding-bottom: 30px;
+                font-size: 28px;
+                text-shadow: 2px 2px 2px #000;
+            }
+            .rec-carousel-item {
+                &.rec-carousel-item-0 .card {
+                    background-image: url('./images/slider-1.jpg');
+                }
+                &.rec-carousel-item-1 .card {
+                    background-image: url('./images/slider-2.jpg');
+                }
+                &.rec-carousel-item-2 .card {
+                    background-image: url('./images/slider-3.jpg');
+                }
+                &.rec-carousel-item-3 .card {
+                    background-image: url('./images/slider-4.jpg');
+                }
+                &.rec-carousel-item-4 .card {
+                    background-image: url('./images/slider-5.jpg');
+                }
+                &.rec-carousel-item-5 .card {
+                    background-image: url('./images/slider-6.jpg');
+                }
+            }
+        }
+    }
+}
+
+button.rec-dot_active, button.sc-gKAaRy.ejXxNI.rec.rec-dot.rec.rec-dot_active {
+    box-shadow: none;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+button.sc-gKAaRy.jLgnwX.rec.rec-dot {
+    background: #000;
+    border: 0px;
+    box-shadow: none;
+}

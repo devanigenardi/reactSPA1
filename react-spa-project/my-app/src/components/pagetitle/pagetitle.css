@@ -1,0 +1,26 @@
+h1 {
+  position: relative;
+  padding-left: 10px;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  height: 90%;
+  width: 4px;
+  background-color: #f5c518;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 2px;
+}
+
+h1 svg {
+  fill: #000;
+}
+/*# sourceMappingURL=pagetitle.css.map */

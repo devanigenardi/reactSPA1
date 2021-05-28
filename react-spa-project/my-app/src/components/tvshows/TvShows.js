@@ -1,10 +1,11 @@
 import React from 'react'
+import PageTitle from '../pagetitle/PageTitle'
 
 const TvShows = () => {
     return (
         <div className="container">
             <div className="row">
-                <h1>Tv Shows</h1>
+            <PageTitle title="Tv Shows" />
             </div>
         </div>
     )
